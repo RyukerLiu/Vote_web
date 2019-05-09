@@ -23,17 +23,15 @@
             <div class='panel panel-heading'>
                 {{ pollitem.name }}
             </div>
+            {% if pollitem.image_url %}
             <div class='panel panel-body'>
-                {% if pollitem.image_url %}
                     <img src='{{ pollitem.image_url }}' width='100%'>
-                {% else %}
-                    <img src='http://i.imgur.com/Ous4iGB.png' width='100%'>
-                {% endif %}
             </div>
+            {% endif %}
             <div class='panel panel-footer' align=center>
                 <h4>
                 <a href='/vote/{{poll.id}}/{{pollitem.id}}' title='投票'>
-                    ↑
+                    <span class='glyphicon glyphicon-heart-empty'></span>
                 </a>
                 目前票數:{{ pollitem.vote }}
                 </h4>

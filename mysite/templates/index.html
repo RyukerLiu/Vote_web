@@ -11,7 +11,7 @@
 		<div class='panel panel-default'>
 			<div class='panel-heading' align=center>
 			    <h3>歡迎光臨投票趣</h3>
-			    <p>歡迎使用Facebook註冊/登入你的帳號，立即擁有投票和製作投票的功能。</p>
+			    <p>歡迎使用Google帳號登入，立即擁有投票的權力。</p>
 			</div>
 		</div>
 	</div>
@@ -21,7 +21,7 @@
     {% if forloop.first %}
         <div class='list-group'>
     {% endif %}
-            <a href='{% url "poll-url" poll.id %}' class='list-group-item'>{{ poll.name }}</a>
+        <a href='{% url "poll-url" poll.id %}' class='list-group-item'>{{ poll.name }}</a>
     {% if forloop.last %}
         </div>
     {% endif %}

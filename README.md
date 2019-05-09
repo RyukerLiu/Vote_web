@@ -1,3 +1,3 @@
-# This is a Vote_web.
+# This is a vote web.
 ## Welcome~~~~
 http://ryuker.pythonanywhere.com/
